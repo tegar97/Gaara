@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+
+    tools:context=".DetailProductActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/menu_icon_description"
+            android:scaleType="fitXY"
+
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="24dp"
+            tools:layout_conversion_absoluteWidth="24dp" />
+
+        <TextView
+            android:id="@+id/brandText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            android:layout_margin="16dp"
+
+            android:fontFamily="@font/robotoslab_bold"
+            app:layout_constraintEnd_toStartOf="@id/shoppingBagIcon"
+            app:layout_constraintStart_toEndOf="@id/ic_back"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="24dp"
+            tools:layout_conversion_absoluteWidth="76dp"
+            tools:layout_editor_absoluteX="56dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+
+        <ImageView
+            android:id="@+id/shoppingBagIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="16dp"
+
+            android:src="@drawable/ic_shopping"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="24dp"
+            tools:layout_conversion_absoluteWidth="24dp"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageView
+            android:id="@+id/iv_detail_image"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+           android:padding="16dp"
+
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+
+            app:layout_constraintTop_toBottomOf="@+id/brandText"
+
+
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            style="@style/TextContent.Title"
+
+            android:layout_marginTop="20dp"
+            android:text="@string/dummy_title"
+            app:layout_constraintTop_toBottomOf="@+id/iv_detail_image"
+            tools:layout_editor_absoluteX="36dp" />
+
+        <TextView
+            android:id="@+id/tv_detail_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            style="@style/TextContent.PriceBig"
+
+            android:text="@string/price_dummy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_title" />
+
+        <TextView
+            android:id="@+id/tv_detail_descriptiom"
+            style="@style/TextContent.content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/dummy_description"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_price"
+        />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:id="@+id/small_detail_product"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_detail_descriptiom">
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    style="@style/TextContent.content"
+
+                    android:text="Brand  :"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/TextContent.content"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_brand"
+
+                    android:text="Adidas"/>
+
+            </TableRow>
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    style="@style/TextContent.content"
+                    android:text="Size   :"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:id="@+id/tv_size"
+                    style="@style/TextContent.content"
+                    android:text="S,M,XL,XXL"/>
+
+            </TableRow>
+        </TableLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/black"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/action_share"
+
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/dummy_button_text"
+            app:layout_constraintTop_toBottomOf="@+id/small_detail_product"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

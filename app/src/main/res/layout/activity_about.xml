@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".AboutActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/tegar"
+            android:layout_gravity="center"
+
+
+
+            android:layout_marginBottom="10dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+
+                android:textSize="18sp"
+                android:fontFamily="@font/robotoslab_medium"
+
+                android:layout_height="wrap_content"
+                android:text="Muhammad Tegar Akmal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_regular"
+
+                android:layout_height="wrap_content"
+                android:text="kakarot123456ar@gmail.com" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/go_back_home"
+                android:text="Kembali ke Home"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

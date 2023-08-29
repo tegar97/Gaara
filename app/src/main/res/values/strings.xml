@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Gaara</string>
+    <string name="menu_icon_description">Menu Icon</string>
+    <string name="heading_1">New Arrival</string>
+    <string name="dummy_title">Casual White Style</string>
+    <string name="jargon">Luxury, elegant and cozy</string>
+    <string name="popular_outfits">Popular Outfits🔥</string>
+    <string name="price_dummy">$21.11</string>
+    <string name="dummy_description">A comfortable outfit for you to wear in spring with an elegant and modern look. Get it now</string>
+    <string name="dummy_button_text">Share To your friends</string>
+
+    <string-array name="data_new_arrival_title">
+        <item>Casual White Style</item>
+        <item>Casual Cold Style</item>
+        <item>Chic Bear Style</item>
+        <item>Street Elegant Style</item>
+        <item>Bohemian Black Style</item>
+        <item>Mexico Pinky Style</item>
+        <item>Black Cool Style</item>
+        <item>Street Shirt Style</item>
+        <item> Cotton Apparel Style</item>
+        <item>Super Elegeant Style</item>
+    </string-array>
+    <!-- Dummy Data for data_new_arrival_description -->
+    <string-array name="data_new_arrival_description">
+        <item>Stay comfortable with this casual white style outfit. Perfect for everyday wear.</item>
+        <item>Embrace the cold weather with this cozy casual cold style. Stay warm and stylish.</item>
+        <item>Express your inner chic with this adorable bear style. A cute and fashionable choice.</item>
+        <item>Rock the streets with this elegant street style outfit. Make a statement everywhere you go.</item>
+        <item>Go bohemian with this black style. Effortlessly cool and free-spirited.</item>
+        <item>Add a pop of color with this Mexico pinky style. Brighten up your look.</item>
+        <item>Achieve a cool and edgy look with this black cool style outfit. Stand out from the crowd.</item>
+        <item>Combine comfort and style with this street shirt style. Perfect for urban adventurers.</item>
+        <item>Experience the softness of cotton with this cotton apparel style. Classic and timeless.</item>
+        <item>Elevate your style with this super elegant outfit. Perfect for special occasions.</item>
+    </string-array>
+
+    <!-- Dummy Data for data_new_arrival_brand -->
+    <string-array name="data_new_arrival_brand">
+        <item>UrbanWear</item>
+        <item>CosyFit</item>
+        <item>ChicBoutique</item>
+        <item>StreetCraze</item>
+        <item>BohoVibes</item>
+        <item>MexiChic</item>
+        <item>EdgeStyle</item>
+        <item>CityThreads</item>
+        <item>PureComfort</item>
+        <item>EleganceBeyond</item>
+    </string-array>
+
+    <!-- Dummy Data for data_new_arrival_size_available -->
+    <string-array name="data_new_arrival_size_available">
+        <item>M, XL, S</item>
+        <item>S, M, L</item>
+        <item>S, M</item>
+        <item>M, L, XL</item>
+        <item>L, XL</item>
+        <item>S, M, L</item>
+        <item>M, L</item>
+        <item>L, XL</item>
+        <item>S, M, L</item>
+        <item>M, L, XL</item>
+    </string-array>
+
+    <string-array name="data_new_arrival_price">
+        <item>$25.23</item>
+        <item>$32.23</item>
+        <item>$21.23</item>
+        <item>$26.23</item>
+        <item>$26.23</item>
+        <item>$32.23</item>
+        <item>$56.23</item>
+        <item>$89.23</item>
+        <item>$32.23</item>
+        <item>$45.23</item>
+
+    </string-array>
+    <integer-array name="data_new_arrival_image">
+        <item>@drawable/product_pic1</item>
+        <item>@drawable/product_pic2</item>
+        <item>@drawable/product_pic3</item>
+        <item>@drawable/product_pic10</item>
+        <item>@drawable/product_pic5</item>
+        <item>@drawable/product_pic6</item>
+        <item>@drawable/product_pic7</item>
+        <item>@drawable/product_pic8</item>
+        <item>@drawable/product_pic9</item>
+        <item>@drawable/product_pic10</item>
+    </integer-array>
+
+</resources>
